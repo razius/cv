@@ -1,0 +1,189 @@
+*, ::before, ::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin:0px;
+    padding:0px;
+    height:100%;
+    width:100%;    
+}
+
+html {
+    /*
+    background-color:#f0f0f0;
+    background-image:linear-gradient(top, #d6d6d6 0%, #f0f0f0 51%);
+    background-image:-webkit-linear-gradient(top, #d6d6d6 0%, #f0f0f0 51%);
+    background-image:-ms-linear-gradient(top, #d6d6d6 0%, #f0f0f0 51%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #d6d6d6),
+        color-stop(0.51, #f0f0f0)
+    );       
+*/
+}
+
+body {
+    font-family: 'Crimson Text', "Helvetica", "Arial", sans-serif;
+    font-size: 100%;
+    color: #555555;
+    background-color: #F1F1F1;  
+    text-shadow:2px 2px 2px #FFFFFF;  
+}
+
+body, div, dl, dt, dd, ul, ol, li, pre, form, p, blockquote, th, td, table thead tr th, table tfoot tr th, table tbody tr td, table tr td, table tfoot tr td {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.content {
+    background-color: #FDFDFD;
+    border: 1px solid #E8E8E8;  
+    margin-top: 3rem;
+    padding: 4rem;
+}
+
+.contact {
+    /*font-weight: bold;*/
+}
+
+.contact .columns {
+    display: table-cell;
+    vertical-align: middle;
+    float: right !important;
+}
+
+.contact ul {
+    list-style: none;
+}
+
+ul.contact li:hover > a {
+    color: #2BA6CB;
+    -webkit-transition: all 200ms ease-in-out; /*safari and chrome */
+    -o-transition: all 200ms ease-in-out; /* opera */    
+}
+
+ul.contact li a {
+    text-align: right;
+}
+
+a {
+    color: #444444;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #444444;
+    font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;    
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin:0;
+    line-height: 2.5rem; 
+    display: block;   
+}
+
+h3 {
+    font-size: 1.9rem;
+    padding-bottom: 0.8rem;
+}
+
+h4 {
+    font-size: 1.7rem;
+    display: inline;
+}
+
+h5 {
+    font-size: 1.34rem;
+}
+
+.name {
+    line-height: 0rem;    
+}
+
+.tooltip {
+    text-shadow: none !important;  
+}
+
+.has-tip, .has-tip:hover {
+    /*border: none;*/
+}
+
+dt {
+    font-weight: bold;
+    font-size: 1.9rem;
+    border-bottom: dotted 1px #ccc;
+}
+
+i {
+    margin-right: 1.2rem;
+}
+
+.section {
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+    /*border-bottom: 0.7rem solid #666666;*/
+}
+
+.section h3 {
+    /*border-bottom: 1px solid #F1F1F1;    */
+}
+
+.section > .columns > .columns {
+    padding-left: 0;
+    padding-right: 30;
+}
+
+li div.content {
+    margin: 0;
+}
+
+ul.accordion > li > div.title {
+    line-height: 1.2rem;
+}
+
+.has-tip, .has-tip:hover {
+    border: none;
+}
+
+ul.accordion > li,  ul.accordion > li:hover {
+    /*border-top: 1px solid #e9e9e9;*/
+}
+
+table {
+    border: none;
+    background-color: transparent;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: transparent;
+}
+
+tr, td {
+    border: none;
+}
+
+table tbody tr td {
+    padding: 0;
+}
+
+.experience {
+    margin-bottom: 2rem;
+}
+
+.right {
+    float: right !important;
+}
+
+.show-on-print {
+    display: none;
+}
+
+ul {
+    list-style-position:inside;
+    margin: 0;
+}

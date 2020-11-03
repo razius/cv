@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html ng-app="cv" ng-controller="CVTemplateCtrl">
+<head ng-cloack>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title ng-bind-template="{{ personalData.firstname }} {{ personalData.lastname}} - Curriculum Vitae">Curriculum Vitae</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900,400italic|Crimson+Text:400,600' media="all" />
+    <link rel="stylesheet" type='text/css' href="lib/foundation/foundation.min.css" media="all" />
+    <link rel="stylesheet" type='text/css' href="lib/fontawesome/font-awesome.css" media="all" />
+    <link rel="stylesheet" type='text/css' href="css/screen.css" media="screen" />
+    <link rel="stylesheet" type='text/css' href="css/print.css" media="print" />
+
+</head>
+<body style="display:none" ng-show="true">
+<div class="content row">
+    <div class="row personalData section">
+        <div class="column name mobile-two">
+            <h1>
+                <span class="has-tip tip-top noradius" title="This is my firstname">
+                    {{ personalData.firstname }}
+                </span>
+                <span class="has-tip tip-top noradius" title="This is my lastname">
+                    {{ personalData.lastname }}
+                </span>
+            </h1>
+            <h5>{{ personalData.tagline }}</h5>
+        </div>
+        <div class="contact">
+            <div class="columns">
+                <ul>
+                    <li>
+                        <a href="tel:{{ personalData.phone }}">
+                            <i class="icon-phone"></i>
+                            <span class="phone">{{ personalData.phone }}</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:{{ personalData.email }}">
+                            <i class="icon-envelope"></i>
+                            <span class="email">{{ personalData.email }}</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="columns">
+                <ul>
+                    <li>
+                        <a href="http://{{ personalData.website }}">
+                            <i class="icon-link"></i>
+                            <span class="email">{{ personalData.website }}</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/{{ personalData.github }}">
+                            <i class="icon-github"></i>
+                            <span class="email">{{ personalData.github }}</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row description section">
+        <div class="twelve columns">
+            <div ng-repeat="line in personalData.desc"> {{ line }}</div>
+        </div>
+    </div>
+    <div class="row skills section">
+        <div class="columns twelve">
+            <h3><i class="icon-cogs icon"></i>Skills Summary</h3>
+            <ul>
+                <li ng-repeat="skill in skills">
+                    <strong>{{ skill.name }}:</strong>
+                    <span ng-bind-html-unsafe="skill.desc">{{ skill.desc }}</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row skills section">
+        <div class="columns twelve">
+            <h3><i class="icon-briefcase icon"></i>Work Experience</h3>
+            <div ng-repeat="experience in workExperience | filter:{show:true}">
+                <dl class="experience">
+                    <dt>
+                        <h4>
+                            {{ experience.company }}
+                            <span ng-show="experience.companyDesc">({{ experience.companyDesc }})</span>
+                        </h4>
+                    </dt>
+                    <dd>
+                        <h5>
+                            {{ experience.position }}
+                            <span class="right">
+                                <date ng-hide="experience.startDate == undefined" date="experience.startDate" format="dateFormat"></date>
+                                <span ng-hide="experience.startDate == undefined">-</span>
+                                <date ng-hide="experience.endDate == undefined" date="experience.endDate" format="dateFormat"></date>
+                            </span>
+                        </h5>
+                        <ul ng-repeat="desc in experience.desc">
+                            <li>{{ desc }}</li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <div class="row others section">
+        <div class="columns twelve">
+            <h3><i class="icon-heart icon"></i>Projects & Others</h3>
+            <div ng-repeat="project in projects | limitTo:20">
+                <dl>
+                    <dt>{{ project.name }}</dt>
+                    <dd>{{ project.desc }}</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <div class="row skills section">
+        <div class="columns twelve">
+            <h3><i class="icon-book icon"></i>Education</h3>
+            <dl ng-repeat="education in educations">
+                <dt>{{ education.institution }}<dt>
+                <dd>
+                    {{ education.program }} :
+                    <span class="right">{{ education.startDate }} - {{ education.endDate }}</span>
+                    <br />
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+    <script src="lib/jquery/jquery-1.9.1.min.js "></script>
+    <script src="lib/foundation/foundation.min.js"></script>
+    <script src="lib/foundation/app.js"></script>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-29024708-1', 'auto', {allowLinker: true});
+      ga('require', 'linker');
+      ga('linker:autoLink', ['razius.com', 'cv.razius.com']);
+      ga('send', 'pageview');
+    </script>
+</body>
+</html>
+

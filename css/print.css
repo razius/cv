@@ -1,0 +1,110 @@
+@import url('screen.css') print;
+
+* {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+@page {
+    margin: 1cm;
+}
+
+html, body, .content {
+    margin: 0;
+    padding: 0;
+}
+
+body, div, dl, dt, dd, ul, ol, li, pre, form, p, blockquote, th, td, table thead tr th, table tfoot tr th, table tbody tr td, table tr td, table tfoot tr td, h5 {
+    font-size: 1.3rem;
+    line-height: 2rem;
+}
+
+h2, h3, p {
+    page-break-after: avoid;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.9rem;
+}
+
+h4 {
+    font-size: 1.7rem;
+    display: inline;
+}
+
+h5 {
+    font-size: 1.2rem;
+}
+
+.content {
+    margin: 0;
+    border: none;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+a:link:after, a:visited:after {
+    content:"";
+}
+
+ul.accordion li {
+    border: none;
+}
+
+ul.accordion {
+    border: none;
+}
+
+.title {
+    border: none;
+}
+
+ul.accordion > li > div.title {
+    border: none;
+}
+
+ul.accordion > li > div.title::after {
+    border: none;
+}
+
+ul.accordion > li > div.title {
+    padding: 0;
+}
+
+.section {
+    /*margin-top: 0rem;*/
+    /*padding-bottom: 0rem;	*/
+    margin: 0;
+    padding: 0;
+}
+
+.show-on-print {
+    display: block;
+}
+
+.personalData {
+    padding-bottom: 2rem;
+}
+
+dl {
+    margin: 0.5rem;
+}
+
+.experience {
+    /*margin-bottom: 0;*/
+}
+
+.page-break {
+    page-break-before: always;
+    margin-top: 1rem;
+}
+
+dl {
+	  margin-bottom: 0;
+}

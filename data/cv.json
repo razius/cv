@@ -1,0 +1,172 @@
+{
+
+    "personalData" : {
+        "firstname" : "Silviu",
+        "lastname" : "Tantos",
+        "tagline": "Developer / System Administrator",
+        "phone" : "(+45) 5222.3852",
+        "email" : "me@razius.com",
+        "website" : "razius.com",
+        "github" : "razius",
+        "linkedin" : "linkedin.com/in/razius",
+        "address": "Copenhagen, Denmark",
+        "desc" : [
+            "Full stack web developer coming from a system administration background, jack of all trades, interested in everything that poses a challenge and gives a different perspective on problem solving. Current interests are large-scale architecture, real-time data pipelines, domain-driven design, CQRS, event sourcing, functional programming and lambda calculus."
+        ]
+    },
+
+    "skills" : [
+        {
+            "name" : "Languages",
+            "desc" : "Python, JavaScript, SQL, Bash, C, Java"
+        },
+        {
+            "name" : "Frameworks",
+            "desc" : "Django, React/Redux"
+        },
+        {
+            "name" : "Services",
+            "desc" : "PostgreSQL, Redis, Elasticsearch, Kafka, Celery"
+        },
+        {
+            "name" : "System Administration",
+            "desc" : "Linux (Debian/Ubuntu), Automation (Ansible, Packer, Vagrant, Docker), Web (nginx, Apache), Virtualization (OpenVZ, LXC, Xen, KVM), Firewall (iptables), DNS (Bind9, djbdns), AWS"
+        },
+	{
+	    "name": "Analytics",
+	    "desc": "Snowplow, Spark, HDFS, Parquet"
+	},
+        {
+            "name" : "Networking",
+            "desc" : "TCP/IP, DNS, VLAN, VPN"
+        }
+    ],
+    "educations" : [{
+        "institution" : "VIA University",
+        "program" : "Bachelor, IT Engineering",
+        "startDate" : "Aug. 2011",
+        "endDate" : "Jan. 2015",
+        "courses" : [
+            "Software development with Java",
+            "Algorithms and advanced data structures",
+            "Computer architecture",
+            "Computer networking",
+            "Web and database design",
+            ".NET Programming",
+            "Real-Time programing and interfacing",
+            "Applied Linear Algebra",
+            "Stochastic Modeling and Processing",
+            "Mobile Applications",
+            "Hardware Oriented Programming",
+            "Data Warehousing",
+            "FPGA Programming with VHDL and Simulation",
+            "Data Encryption and Security",
+            "Embedded System Development with Java"
+        ]
+    }],
+
+    "certificates" : [
+    ],
+
+    "workExperience" : [
+        {
+            "company" : "Unisport",
+            "website" : "www.unisport.dk",
+            "companyDesc" : "B2C e-commerce",
+            "position" : "Lead Software Developer",
+            "show": true,
+            "startDate" : "2015-04-01",
+            "endDate" : "",
+            "desc" : [
+                "Built a system for returning goods, including handling of stock, refunds, replacements and reporting",
+                "Technical lead for projects related to the life-cycle of an order and core business systems, this includes cart, order management, warehouse fulfillment and order dispatching systems",
+                "Technical lead for building a new product management tool. Some of the challenges include bulk product creation, bulk product editing, and designing new processes and workflows to manage the life-cycle of a product",
+                "Technical lead for the opening of our first physical store. Some of the challenges include refactoring our warehouse management system to support multiple facilities, handling stock transfers, automatically importing orders, POS integration, omni-channel integration",
+                "Built a rules engine for handling promotions and discounts based on attributes that the sales/marketing team can enter themselves",
+                "Built the infrastructure and CI/CD pipeline. Keywords: Kubernetes, AWS, Docker, Ansible, Packer, Fabric, immutable infrastructure, blue-green deploys, lambda/kappa architecture"
+            ]
+        },
+        {
+            "company" : "Iconfinder",
+            "website" : "www.iconfinder.com",
+            "companyDesc" : "icon search engine",
+            "position" : "Software Developer",
+            "show": true,
+            "startDate" : "2013-09-02",
+            "endDate" : "2015-03-31",
+            "desc" : [
+                "Wrote the Vagrant file, bash and chef scripts that created and provisioned the development environment",
+                "Built a system for sending recomendation emails based on customer's past purchases",
+                "Built a comments application complete with admin panel, comment moderation, throttling and spam filtering",
+                "Built a pub/sub notification framework where users and admins can subscribe to certain events (E.g. new submission by a designer, new comment in thread) and receive a notification using pluggable back-ends (E.g. email, push notifications) when the event is triggered",
+                "Built a content-based image retrieval engine that can search through a large set of images (1M at time of testing) and return in real-time (under 200ms) results that are similar or identical to the searched image"
+            ]
+        },
+        {
+            "company" : "Freelancer",
+            "website" : "www.razius.com",
+            "companyDesc" : "",
+            "position" : "Developer / Sysadmin",
+            "show": true,
+            "desc" : ["Worked as a freelancer on numerous interesting projects including: deployments of disk images using PXE, scalable web site architectures with nginx+varnish+memcached, custom writen bash scripts to automate inhouse work and backing-up data, Android applications, web applications, etc"]
+        },
+        {
+            "company" : "Astor-Valpet",
+            "website" : "www.valpet.ro",
+            "companyDesc" : "Holding of road work and construction companies",
+            "position" : "System Administrator",
+            "startDate" : "2010-10-01",
+            "endDate" : "2011-08-01",
+            "desc" : ["Configured and maintained all IT&C infrastructure, connected the company's offices to the main headquarter, provided IT support and training for the staff."]
+        },
+        {
+            "company" : "Corso Magazine",
+            "website" : "www.ofcorso.ro", "companyDesc" : "National urban culture magazine",
+            "position" : "Sysadmin / Webmaster",
+            "startDate" : "2010-03-12",
+            "endDate" : "2011-08-01",
+            "desc" : ["Responsible for maintaining the magazine's website, some of the duties included ensuring that the web servers operated correctly, customising the website and updating the content."]
+        },
+        {
+            "company" : "TTM Television Station",
+            "website" : "www.tvmures.ro",
+            "companyDesc" : "Largest regional television station",
+            "position" : "Sysadmin / Webmaster",
+            "startDate" : "2009-04-12",
+            "endDate" : "2011-09-01",
+            "desc" : ["Reorganized, configured and maintained all IT&C infrastructure, created custom bash scripts to automate the inhouse work, provided IT support and training for the staff."]
+        },
+        {
+            "company" : "Sistec-SBsol",
+            "website" : "www.sistec.ro",
+            "companyDesc" : "IT division of one of the largest Romanian group (RTC)",
+            "position" : "IT Support",
+            "startDate" : "2008-03-02",
+            "endDate" : "2009-06-08",
+            "desc" : [""]
+        },
+        {
+            "company" : "Elnicron",
+            "companyDesc" : "Local IT&C company",
+            "website" : "www.elnicron.ro",
+            "position" : "IT Support",
+            "startDate" : "2006-10-01",
+            "endDate" : "2008-02-24",
+            "desc" : [""]
+        }
+    ],
+    "projects" : [
+        {
+            "name" : "VIA University ITLab",
+            "desc" : "Working as a system administrator on ITLab, a student driven network situated at VIA University's campus in Horsens. It offers DNS and Web (PHP, Python, Ruby on Rails) hosting, git/svn repositories and technical support for students."
+        },
+        {
+	          "name" : "Linux User Group Mures",
+	          "desc" : "One of the founding members of my hometown (Targu Mures, Romania) Linux User Group. Organised, provided support and talked during technical presentations, install fests and regular meetings."
+        },
+        {
+	          "name" : "Volunteering",
+	          "desc" : "I volunteered for a number of small NGO's and organizations. My typical responsibilities usually revolved around designing/building/maintaining a web application, setting up the servers, hosting the application, and general technical support."
+        }
+    ]
+}
